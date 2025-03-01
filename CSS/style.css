@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* global values */
+:root {
+  --main-color: linear-gradient(90deg, #e85804 4.77%, #fd8401 71.37%);
+  --orange: rgba(253, 132, 1, 1);
+  --info: rgba(67, 129, 203, 1);
+  --dark-gray: rgba(62, 75, 86, 1);
+}
+ul li {
+  list-style: none;
+}
+button {
+  border: none;
+}
+body {
+  font-family: "Outfit", serif !important;
+}
+.primary-color {
+  background: var(--main-color);
+  color: white;
+}
+.text-color {
+  color: var(--orange);
+}
+.info-color {
+  color: var(--info) !important;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+/* start landing page */
+
+.landing_background {
+  background: url(../assets/bg_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.landing_background nav a {
+  color: white !important;
+  font-size: 15 px;
+  font-weight: 500;
+}
+.contact-btn {
+  padding: 18px 30px;
+  border: 1px solid white;
+  margin-left: 50px;
+}
+
+.left-txt h1 {
+  font-size: 80px;
+  font-weight: 600;
+  color: white;
+}
+.left-txt h2 {
+  font-size: 72px;
+  font-style: italic;
+  font-family: "Playfair Display", serif !important;
+  color: var(--orange);
+}
+.left-txt p {
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+}
+.land-btn {
+  padding: 20px 45px;
+}
+/* end landing page */
+
+/* start info area */
+.info-txt {
+  line-height: 28px;
+}
+.info-txt p {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--dark-gray);
+  margin-top: 1px;
+}
+.info-box {
+  background-color: rgba(240, 247, 252, 1);
+  padding: 30px;
+}
+.info-box img {
+  width: 120px;
+  height: 120px;
+}
+.info-box-txt p {
+  line-height: 10px;
+}
+.brands {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.brands .logos-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  animation: scroll 30s linear infinite;
+}
+.brands h4 {
+  color: rgba(137, 137, 137, 1);
+  font-weight: 400;
+  font-size: 14px;
+}
+.brands .logos-container img {
+  width: 100px; /* Adjust size as needed */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* end info area */
+
+/* start solutions section */
+.solutions h2 {
+  font-size: 36px;
+  font-weight: 400;
+}
+.solutions h5 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.solutions p {
+  font-size: 17px;
+  font-weight: 300;
+  color: var(--dark-gray);
+}
+.check-icon {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--info);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--info);
+  font-weight: bold;
+}
+.check-icon i {
+  font-size: 20px;
+}
+/* end solutions section */
+
+/* start responsive area */
+@media only screen and (max-width: 600px) {
+  .info-txt p {
+    font-size: 13px;
+    padding: 0px 10px;
+    text-align: center;
+  }
+  .info-txt h4 {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .info-txt p {
+    font-size: 13px;
+    padding: 0px 10px;
+    text-align: center;
+  }
+  .info-txt h4 {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .info-txt h3 {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+/* end responsive area */
