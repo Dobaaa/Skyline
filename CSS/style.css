@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 /* global values */
 :root {
   --main-color: linear-gradient(90deg, #e85804 4.77%, #fd8401 71.37%);
@@ -6,6 +7,10 @@
   --info: rgba(67, 129, 203, 1);
   --dark-gray: rgba(62, 75, 86, 1);
 }
+a {
+  text-decoration: none !important;
+}
+
 ul li {
   list-style: none;
 }
@@ -27,6 +32,12 @@ body {
 }
 .text-nowrap {
   white-space: nowrap;
+}
+.dark-color {
+  color: var(--dark-gray);
+}
+.fs-36 {
+  font-size: 36px;
 }
 /* start landing page */
 
@@ -154,6 +165,21 @@ body {
 }
 /* end solutions section */
 
+/**/
+.cate-one,
+.cate-two {
+  background: linear-gradient(259.78deg, #205799 1.93%, #0b1d33 134.06%);
+  color: white;
+}
+.cate-txt h5 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.cate-txt {
+  padding: 0px 35px;
+}
+
 /* start responsive area */
 @media only screen and (max-width: 600px) {
   .info-txt p {
@@ -165,6 +191,13 @@ body {
     font-size: 15px;
     font-weight: 600;
     text-align: center;
+  }
+  .cate-box img {
+    width: 172px;
+  }
+  .cate-txt h5 {
+    font-size: 18px;
+    font-weight: 400;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
@@ -183,5 +216,19 @@ body {
     font-weight: 600;
     text-align: center;
   }
+  .cate-box img {
+    width: 170px;
+  }
+  .cate-txt h5 {
+    font-size: 20px;
+    font-weight: 400;
+  }
 }
 /* end responsive area */
+.steps {
+  overflow: hidden;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}

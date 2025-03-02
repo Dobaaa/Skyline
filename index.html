@@ -3,8 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link native CSS -->
     <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- Link Fontsawesome icons -->
     <link rel="stylesheet" href="./CSS/all.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Link bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -321,16 +329,110 @@
           </div>
         </div>
       </div>
-      <div class="category">
-        <div class="cate-one"></div>
-        <div class="cate-two"></div>
+      <div class="category container p-4">
+        <div class="row gap-4 gap-md-0">
+          <div class="cate-box col-12 col-md-6">
+            <div class="cate-one d-flex align-items-center">
+              <img src="./assets/housee.png" alt="" />
+              <div class="cate-txt">
+                <h5>
+                  Residential <br />
+                  Solar Solutions
+                </h5>
+                <a href="" class="info-color">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="cate-box col-12 col-md-6">
+            <div class="cate-two d-flex align-items-center">
+              <img src="./assets/board.png" alt="" />
+              <div class="cate-txt">
+                <h5>
+                  Commercial <br />
+                  Solar Solutions
+                </h5>
+                <a href="" class="info-color">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!--end solutions section-->
+
+    <!--start how we work-->
+    <div class="how-work pt-5 pb-5">
+      <div class="container">
+        <div class="how-work-txt">
+          <p class="info-color text-uppercase">how we work</p>
+          <h3 class="fs-36 fw-normal">Effortless Solar Installation</h3>
+          <p class="dark-color fw-light">
+            We simplify the transition to solar energy with a streamlined,
+            four-step process designed to deliver the best results:
+          </p>
+        </div>
+        <div class="steps">
+          <div class="continer d-flex justify-content-center">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide stp col-12 col-md-4 col-lg-3">
+                  <div class="">
+                    <h3 class="info-color fs-1">01</h3>
+                    <h5>Consultation & Site Evaluation</h5>
+                    <p>
+                      We assess your energy needs and property to find the best
+                      solar solution.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide stp col-12 col-md-4 col-lg-3">
+                  <div class="">
+                    <h3 class="info-color fs-1">02</h3>
+                    <h5>System Design & Permitting</h5>
+                    <p>
+                      Our experts design your solar system and handle all
+                      necessary permits.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide stp col-12 col-md-4 col-lg-3">
+                  <div class="">
+                    <h3 class="info-color fs-1">03</h3>
+                    <h5>Installation & Inspection</h5>
+                    <p>
+                      We install your solar panels and ensure everything meets
+                      standards.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide stp col-12 col-md-4 col-lg-3">
+                  <div>
+                    <h3 class="info-color fs-1">04</h3>
+                    <h5>Activation & Monitoring</h5>
+                    <p>
+                      We activate your system and provide monitoring for optimal
+                      performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Navigation buttons -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <!-- Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end how we work-->
 
     <!--start scripts -->
     <!-- Bootstrap JS ( Popper.js) -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
   </body>
 </html>
