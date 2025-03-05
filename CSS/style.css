@@ -924,6 +924,55 @@ footer img {
 }
 /* end  about*/
 
+/* start contact */
+
+.contact-land {
+  position: relative;
+  background: url(../assets/17a4506047d2063e379128dafb4faaf4.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.contact-land::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    260.01deg,
+    rgba(0, 26, 58, 0.35) 29.55%,
+    rgba(0, 1, 3, 0.7) 78.55%
+  );
+}
+
+.form-section form {
+  background-color: rgba(240, 247, 252, 1);
+  max-width: 670px;
+  padding: 50px;
+}
+
+.form-ipt input {
+  outline: none;
+  border-style: none;
+  margin-bottom: 10px;
+  padding: 19px 20px;
+}
+.form-section button {
+  background: var(--main-color);
+  padding: 19px 45px;
+  color: white;
+}
+.mesessage {
+  height: 120px;
+}
+.form-info h3 {
+  color: rgba(32, 87, 153, 1);
+}
+/* end contact */
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .info-txt p {
@@ -1167,6 +1216,15 @@ footer img {
     max-width: 570px;
     height: 290px;
     margin-top: 20px;
+  }
+
+  .form-section form {
+    position: absolute;
+    top: 45%;
+    right: 10%;
+  }
+  .form-section {
+    height: 70vh;
   }
 }
 /* end responsive area */
