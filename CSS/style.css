@@ -10,7 +10,13 @@
 a {
   text-decoration: none !important;
 }
-
+a:hover {
+  text-decoration: none !important;
+  color: rgba(105, 127, 145, 1) !important;
+}
+.link {
+  color: rgba(105, 127, 145, 1);
+}
 ul li {
   list-style: none;
 }
