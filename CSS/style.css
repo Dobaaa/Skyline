@@ -10,12 +10,14 @@
 a {
   text-decoration: none !important;
 }
-a:hover {
-  text-decoration: none !important;
-  color: rgba(105, 127, 145, 1) !important;
-}
+
 .link {
   color: rgba(105, 127, 145, 1);
+}
+
+nav {
+  position: relative;
+  top: 30px;
 }
 ul li {
   list-style: none;
@@ -58,24 +60,64 @@ body {
   height: 100vh;
   padding-bottom: 100px;
 }
-
+.landing_background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    260.01deg,
+    rgba(0, 26, 58, 0.35) 29.55%,
+    rgba(0, 1, 3, 0.7) 78.55%
+  );
+}
 .nav-link {
   color: white !important;
   font-size: 15px;
   font-weight: 500;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid white;
+}
+
+.nav-link i {
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  margin-left: 8px;
 }
 .dropdown-item a {
   color: black !important;
   font-size: 15px !important;
 }
 .contact-btn {
-  padding: 18px 30px !important;
+  padding: 15px 40px !important;
   border: 1px solid white;
   font-size: 15px;
   font-weight: 500;
-  margin-left: 50px;
+  transition: 0.5s !important;
 }
-
+.nav-link::after {
+  display: none !important;
+}
+.contact-btn:hover {
+  background-color: white;
+  color: black !important;
+}
+.phone {
+  font-size: 20px;
+  color: white;
+}
+.nav-item a {
+  font-size: 17px;
+  font-weight: 500;
+}
+.left-txt {
+  position: relative;
+  z-index: 55;
+}
 .left-txt h1 {
   font-size: 80px;
   font-weight: 600;
@@ -93,8 +135,14 @@ body {
   color: white;
 }
 .land-btn {
+  background: var(--main-color);
+  color: white;
   padding: 20px 45px;
   font-size: 17px;
+  transition: 1s;
+}
+.land-btn:hover {
+  background: #df944e;
 }
 .right-txt p {
   font-size: 17px !important;
@@ -147,6 +195,7 @@ body {
 .brands .logos-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   animation: scroll 30s linear infinite;
 }
@@ -156,17 +205,9 @@ body {
   font-size: 14px;
 }
 .brands .logos-container img {
-  width: 100px; /* Adjust size as needed */
+  max-width: 100%; /* Adjust size as needed */
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 /* end info area */
 
 /* start solutions section */
@@ -391,42 +432,22 @@ body {
 
 /*  end  calculator*/
 /* start why us */
-
-.why-us-txt .title {
-  color: var(--info);
-  font-weight: 600;
-  font-size: 13px;
-}
-.why-us-txt h4 {
-  font-size: 36px;
-  font-weight: 400;
-}
-.why-us-txt p {
-  font-size: 17px;
-  font-weight: 300;
-}
-.why-us-icons .icon-1,
-.why-us-icons .icon-2 {
+.feature-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(223, 236, 251, 1);
-  max-width: 370px;
-  cursor: pointer;
-  height: 490px;
-  transition: 0.5s;
-}
-
-.why-us-icons div img {
-  width: 80px;
-  height: 80px;
-}
-
-.why-us-icons .icon-2:hover,
-.why-us-icons .icon-1:hover {
   background-color: rgba(223, 236, 251, 1);
+  text-align: center;
+  padding: 30px;
+  height: 490px !important;
+  height: 100%;
 }
+#icon-2 {
+  height: 320px !important;
+  align-items: start;
+}
+
 /* end why us */
 
 /*start slider */
@@ -1020,21 +1041,8 @@ footer img {
     background-repeat: no-repeat;
     height: 50vh;
   }
-  .why-us-icons .icon-1,
-  .why-us-icons .icon-2 {
-    width: 335px;
-    height: 206px;
-    margin-top: 0;
-  }
-  .why-parent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .why-us-icons .icon-1 img,
-  .why-us-icons .icon-2 img {
-    width: 60px;
-    height: 60px;
+  .feature-box {
+    height: 320px !important;
   }
   .custom-swiper .swiper-button-next,
   .custom-swiper .swiper-button-prev {
@@ -1094,6 +1102,17 @@ footer img {
   .seconed-boxes {
     margin-top: 160px;
   }
+  .logo {
+    width: 100px;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -1119,11 +1138,8 @@ footer img {
     color: black;
     margin-top: 30px;
   }
-  .why-us-icons .icon-1,
-  .why-us-icons .icon-2 {
-    max-width: 335px;
-    height: 206px;
-    margin-top: 0;
+  .feature-box {
+    height: 320px !important;
   }
   .solar {
     max-width: 350px;
@@ -1144,6 +1160,17 @@ footer img {
   .seconed-boxes {
     margin-top: 160px;
   }
+  .land-txt {
+    padding-top: 50px;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1162,12 +1189,7 @@ footer img {
     margin-right: 10px;
     font-size: 15px;
   }
-  .why-us-icons .icon-1,
-  .why-us-icons .icon-2 {
-    width: 435px;
-    height: 206px;
-    margin-top: 0;
-  }
+
   #navbarNavDropdown {
     transition: none !important;
     display: none !important;
@@ -1181,16 +1203,18 @@ footer img {
   .info-box {
     width: 500px;
   }
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .why-us-icons .icon-1,
-  .why-us-icons .icon-2 {
-    max-width: 335px;
-    height: 206px;
-    margin-top: 20px;
-  }
   .cate-txt h5 {
     font-size: 18px;
     font-weight: 400;
@@ -1202,28 +1226,10 @@ footer img {
   .info-box h4 {
     font-size: 15px;
   }
-  .why-us-icons .icon-1 img,
-  .why-us-icons .icon-2 img {
-    width: 60px;
-    height: 60px;
-  }
-  .why-us-icons .icon-1 {
-    height: 400px;
-    padding: 30px;
-  }
-  .why-us-icons .icon-2 {
-    padding: 20px 50px;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .why-us-icons .icon-2 {
-    max-width: 570px;
-    height: 290px;
-    margin-top: 20px;
-  }
-
   .form-section form {
     position: absolute;
     top: 45%;

@@ -26,26 +26,34 @@
     <div class="about-land">
       <!--start nav bar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-5">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img src="./assets/logo.png" class="" alt=""
+        <div
+          class="container d-flex justify-content-between justify-content-lg-evenly"
+        >
+          <a class="navbar-brand" href="./index.html"
+            ><img src="./assets/logo.png" class="logo" alt=""
           /></a>
 
           <!-- small screen btn  -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="d-flex align-items-center gap-5 d-lg-none">
+            <a href="./contact.html" class="phone"
+              ><i class="fa-solid fa-phone"></i
+            ></a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
 
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto gap-5">
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -56,14 +64,23 @@
                   aria-expanded="false"
                 >
                   Solutions
+                  <i class="fa-solid fa-angle-down"></i>
                 </a>
+
                 <ul
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink1"
                 >
-                  <li><a class="dropdown-item" href="#">Florida solar</a></li>
-                  <li><a class="dropdown-item" href="#"> Why go solar</a></li>
-                  <li><a class="dropdown-item" href="#"> Benefits</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./residential.html"
+                      >Residential</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./commercial.html"
+                      >Commercial</a
+                    >
+                  </li>
                 </ul>
               </li>
 
@@ -77,6 +94,7 @@
                   aria-expanded="false"
                 >
                   Learn
+                  <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul
                   class="dropdown-menu"
@@ -85,6 +103,7 @@
                   <li><a class="dropdown-item" href="#">Florida solar</a></li>
                   <li><a class="dropdown-item" href="#"> Why go solar</a></li>
                   <li><a class="dropdown-item" href="#"> Benefits</a></li>
+                  <li><a class="dropdown-item" href="#"> installation</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -96,24 +115,35 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  company
+                  Company
+                  <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink2"
                 >
                   <li>
-                    <a class="dropdown-item" href="#">Florida solar</a>
+                    <a href="./about.html" class="dropdown-item">Why Skyline</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"> Why go solar</a>
+                    <a href="./about.html" class="dropdown-item"
+                      >Our services</a
+                    >
                   </li>
-                  <li><a class="dropdown-item" href="#"> Benefits</a></li>
+                  <li><a href="" class="dropdown-item">Our guarantee</a></li>
+                  <li>
+                    <a href="./reviews.html" class="dropdown-item">Reviews</a>
+                  </li>
+                  <li>
+                    <a href="./contact.html" class="dropdown-item">Contacts</a>
+                  </li>
                 </ul>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link contact-btn" href="#">Contacts</a>
+                <a class="nav-link contact-btn" href="./contact.html"
+                  >Contacts</a
+                >
               </li>
             </ul>
           </div>
@@ -239,71 +269,69 @@
     </div>
     <!--end about banner -->
     <!--start why us-->
-    <div class="why-us p-5">
-      <div class="container">
-        <div class="why-parent">
-          <div class="why-us-txt">
-            <p class="title text-uppercase">why us</p>
-            <h4>Why Choose Skyline Power Technologies?</h4>
+    <div class="container py-5">
+      <h6 class="text-primary">WHY US</h6>
+      <h2 class="mb-4">Why Choose Skyline Power Technologies?</h2>
+      <p class="mb-5">
+        Skyline Power Technologies is committed to making solar energy
+        accessible and stress-free. Here’s why we’re the right choice for your
+        solar journey:
+      </p>
+
+      <div class="row g-4 text-center">
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-box">
+            <img src="./assets/g1077.png" alt="Zero Out-of-Pocket" />
+            <h5 class="mt-3">Zero Out-of-Pocket</h5>
             <p>
-              Skyline Power Technologies is committed to making solar energy
-              accessible and stress-free. <br />
-              Here’s why we’re the right choice for your solar journey:
+              Switch to solar with zero out of pocket and start saving from day
+              one.
             </p>
           </div>
-          <div
-            class="why-us-icons row gap-3 gap-md-5 flex-column flex-lg-row d-flex align-items-center justify-content-center"
-          >
-            <div class="col-12 col-md-4 col-lg-3 text-center icon-1">
-              <img src="./assets/g1077.png" alt="" />
-              <h5>Zero Out-of-Pocket</h5>
-              <p>
-                Switch to solar with zero out of pocket <br />
-                and start saving from day one. +
-              </p>
-            </div>
-            <div class="col-12 col-md-4 col-lg-3 text-center icon-1">
-              <img src="./assets/Group.png" alt="" />
-              <h5>6-Year Zero Percent Financing</h5>
-              <p>
-                Pay off your solar panels in 6 years by <br />
-                paying the same amount as your <br />
-                average monthly electric bill.
-              </p>
-            </div>
-            <div class="col-12 col-md-4 col-lg-3 text-center icon-1">
-              <img src="./assets/Mask group (4).png" alt="" />
-              <h5>25-Year Warranty</h5>
-              <p>
-                Your investment is protected with <br />
-                long-term reliability and performance <br />
-                guaranteed.
-              </p>
-            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-box">
+            <img src="./assets/Group.png" alt="6-Year Zero Percent Financing" />
+            <h5 class="mt-3">6-Year Zero Percent Financing</h5>
+            <p>
+              Pay off your solar panels in 6 years by paying the same amount as
+              your average monthly electric bill.
+            </p>
           </div>
-          <div class="why-us-icons row mt-3">
-            <div
-              class="container flex-column flex-lg-row d-flex align-items-center justify-content-center gap-2 gap-lg-5"
-            >
-              <div class="col-12 col-md-6 text-center icon-2">
-                <img src="./assets/Group (1).png" alt="" />
-                <h5>Expert Installation</h5>
-                <p>
-                  Our highly skilled installers ensure every system is set up
-                  <br />
-                  with precision and care for maximum efficiency.
-                </p>
-              </div>
-              <div class="col-12 col-md-6 text-center icon-2">
-                <img src="./assets/g1106.png" alt="" />
-                <h5>Comprehensive Services</h5>
-                <p>
-                  From consultation to activation, we handle everything to
-                  <br />
-                  make your transition to solar smooth and hassle-free.
-                </p>
-              </div>
-            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-box">
+            <img src="./assets/Mask group (4).png" alt="25-Year Warranty" />
+            <h5 class="mt-3">25-Year Warranty</h5>
+            <p>
+              Your investment is protected with long-term reliability and
+              performance guaranteed.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6">
+          <div id="icon-2" class="feature-box text-start">
+            <img src="./assets/Group (1).png" alt="Expert Installation" />
+            <h5 class="mt-3">Expert Installation</h5>
+            <p>
+              Our highly skilled installers ensure every system is set <br />
+              up with precision and care for maximum efficiency.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6">
+          <div id="icon-2" class="feature-box text-start">
+            <img src="./assets/g1106.png" alt="Comprehensive Services" />
+            <h5 class="mt-3">Comprehensive Services</h5>
+            <p>
+              From consultation to activation, we handle <br />
+              everything to make your transition to solar smooth <br />
+              and hassle-free.
+            </p>
           </div>
         </div>
       </div>
